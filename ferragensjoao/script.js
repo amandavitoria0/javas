@@ -1,6 +1,4 @@
-let martelo = 19.99;
 
-//pegar o valor do campo produto
 
 //pegar o valor do campo qtd
 const precos={//dicionario
@@ -10,9 +8,10 @@ const precos={//dicionario
 }
 
 
-function p(){
-    let escolhaproduto = document.getElementById("produto").Value;
-    let Quantidadedeproduto = document.getElementById("Quantidade").Value;
-    console.log(preços[escolhaproduto]*Quantidadedeproduto)
+function calcularpreco(){
+    let escolhaproduto = document.getElementById("produto").value; //
+    let Quantidadedeproduto = document.getElementById("Quantidade").value;
+    console.log(precos[escolhaproduto]*Quantidadedeproduto)
     
 }  
+
