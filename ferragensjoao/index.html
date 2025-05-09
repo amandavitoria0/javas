@@ -1,31 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><!-- Define o tipo de documento como HTML5 -->
+
+<html lang="pt-BR"><!-- Início do documento HTML com idioma português do Brasil -->
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-       <h1>BEM VINDO JOAO FERRAGENS</h1>
-       <label for="productName">Nome do Produto:</label>
-        <select id="produto">
-            <option value="">selecione o produto</option>
-            <option value="parafuso">parafuso</option>
-            <option value="martelo">martelo</option>
-            <option value="chave de fenda">chave de fenda</option>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 para suportar acentuação -->
     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Garante que a visualização será responsiva em dispositivos móveis -->
+
+    <title>João Ferragens</title>   <!-- Título da aba do navegador -->
+ 
+
+    <link rel="stylesheet" href="style.css" /> <!-- Vincula o arquivo externo de estilos CSS -->
+   
+</head>
+
+<body>    <!-- Início do corpo da página -->
+
+
+   
+    <header> <!-- Cabeçalho fixo com nome da loja -->
+        <h1>João Ferragens</h1><!-- Título principal exibido no topo da página -->
+        
+    </header>  <!-- Conteúdo principal da página -->
+
+  
+    <main>
+        <h2>Bem-vindo!</h2><!-- Saudação ao usuário -->
+        
+
+      
+        <label for="produto">Produto:</label>  <!-- Seleção do produto -->
+       
+         <select id="produto" required> <!-- Rótulo para o campo de seleção de produtos -->
+           <option value="">Selecione o produto</option> <!-- Campo de seleção (drop-down) com produtos -->  <!-- Opção inicial (nenhum selecionado) -->
+           <option value="parafuso">Parafuso</option><!-- Opção para parafuso -->
+           <option value="martelo">Martelo</option> <!-- Opção para martelo -->
+           
+            <option value="chave de fenda">Chave de Fenda</option> <!-- Opção para chave de fenda -->
+           
         </select>
 
-        <label for="Quantidade">Quantidade</label>
-        <input type="number" id="Quantidade" name="Quantidade" min="1" step="1" value="1"><br><br>
-    <h2>Mostrar Resultado na tela</h2>
-    <p>Clique no botão abaixo para ver o resultado:</p>
-    <button onclick="calcularpreco()">comprar</button>
-    <p id="resultado"P></p>
-    
-    
-      </form>
+        <!-- Campo de entrada da quantidade -->
+        <label for="quantidade">Quantidade:</label>  <!-- Rótulo do campo de quantidade -->
+      
+        <input type="number" id="quantidade" min="1" placeholder="Quantidade" required /> <!-- Campo numérico que só permite números a partir de 1 -->
+        <!-- Estoque disponível (fixo) -->
+        <label for="estoque">Estoque disponível:</label>
+        <!-- Rótulo do campo de estoque -->
+        <input type="number" id="estoque" value="100" readonly />      <!-- Campo numérico que mostra o estoque fixo (não pode ser alterado) -->
+  
 
-<script src="script.js"></script>
+        <button onclick="calcularPreco()">Comprar</button> <!-- Botão para acionar o cálculo do preço -->
+        <!-- Quando clicado, chama a função JavaScript 'calcularPreco()' -->
+
+        <!-- Resultado da compra será mostrado aqui -->
+        <h4 id="resultado"></h4><!-- Área onde será exibido o total calculado dinamicamente -->
+        
+    </main>
+
+   
+    <footer> <!-- Rodapé da página -->
+        &copy; 2025 João Ferragens. Todos os direitos reservados. <!-- Texto legal no rodapé da página -->
+       
+    </footer>
+
+ 
+    <script src="script.js"></script>   <!-- Importa o arquivo JavaScript com a lógica do cálculo -->
 </body>
+
 </html>

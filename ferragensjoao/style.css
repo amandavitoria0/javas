@@ -1,0 +1,109 @@
+/* Reset & Fonte */
+body {
+    font-family: 'Roboto', sans-serif; /* Define a fonte principal da página */
+    background-color: #f9f9f9;         /* Cor de fundo clara */
+    color: #333;                       /* Cor do texto padrão (cinza escuro) */
+    margin: 0;                         /* Remove margens padrão do navegador */
+    padding: 0;                        /* Remove espaçamento interno padrão */
+    font-size: 16px;                   /* Tamanho base da fonte */
+}
+
+/* Cabeçalho com estilo de menu */
+header {
+    position: fixed;                  /* Fixa o cabeçalho no topo da tela */
+    top: 0;                           /* Posiciona o topo do header no topo da tela */
+    width: 100%;                      /* Faz o header ocupar 100% da largura */
+    background-color: #111;           /* Cor de fundo preta */
+    color: #fff;                      /* Texto branco */
+    text-align: center;               /* Centraliza o conteúdo dentro do header */
+    padding: 20px 0;                  /* Espaçamento vertical interno */
+    border-bottom: 3px solid #ffcc00; /* Linha amarela na parte inferior do header */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar o header */
+    z-index: 1000;                    /* Garante que fique acima de outros elementos */
+}
+
+header h1 {
+    margin: 0;                        /* Remove margem padrão do título */
+    font-size: 2rem;                  /* Tamanho do título */
+    letter-spacing: 2px;              /* Espaçamento entre letras */
+    text-transform: uppercase;        /* Transforma o texto em letras maiúsculas */
+}
+
+/* Espaço para o conteúdo abaixo do cabeçalho fixo */
+main {
+    max-width: 400px;                 /* Largura máxima do conteúdo central */
+    margin: 100px auto 40px;          /* Espaço acima (para não ficar sob o header) e abaixo */
+    padding: 30px;                    /* Espaçamento interno */
+    background: #ffffff;              /* Fundo branco */
+    border-radius: 10px;              /* Bordas arredondadas */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor */
+    transition: all 0.3s ease;        /* Suaviza transições se forem aplicadas depois */
+    text-align: center;               /* Centraliza o texto dentro do bloco */
+}
+
+/* Campos e labels */
+label {
+    font-weight: 600;                 /* Deixa o texto do label em negrito */
+    font-size: 1rem;                  /* Tamanho do texto do label */
+    display: block;                   /* Ocupa linha inteira */
+    margin-bottom: 5px;               /* Espaço abaixo do label */
+    text-align: left;                 /* Alinha o texto do label à esquerda */
+}
+
+input[type="number"],
+select {
+    width: 100%;                      /* Ocupa toda a largura do container */
+    padding: 10px;                    /* Espaço interno */
+    margin-bottom: 15px;              /* Espaço abaixo de cada campo */
+    border-radius: 6px;               /* Bordas arredondadas */
+    border: 1px solid #ccc;           /* Borda cinza clara */
+    font-size: 1rem;                  /* Tamanho da fonte dos campos */
+    transition: border 0.2s ease-in-out; /* Animação suave ao focar */
+}
+
+/* Estilo quando o campo é focado (clicado) */
+input:focus,
+select:focus {
+    border-color: #ffcc00;            /* Muda a cor da borda ao focar */
+    outline: none;                    /* Remove a borda azul padrão do navegador */
+}
+
+/* Botão estilizado */
+button {
+    background: linear-gradient(135deg, #ff0000, #cc0000); /* Degradê vermelho */
+    color: #fff;                     /* Texto branco */
+    padding: 12px;                   /* Espaço interno */
+    font-size: 1rem;                 /* Tamanho do texto do botão */
+    border: none;                    /* Remove a borda padrão */
+    border-radius: 6px;              /* Bordas arredondadas */
+    cursor: pointer;                 /* Cursor tipo "mãozinha" */
+    font-weight: bold;              /* Texto em negrito */
+    width: 100%;                    /* Botão ocupa toda a largura disponível */
+    transition: background 0.3s ease-in-out; /* Animação suave na cor ao passar o mouse */
+}
+
+/* Estilo do botão ao passar o mouse */
+button:hover {
+    background: linear-gradient(135deg, #ffcc00, #e6b800); /* Degradê amarelo */
+    color: #000;                    /* Texto preto para melhor contraste */
+}
+
+/* Área onde o resultado será exibido */
+h4#resultado {
+    margin-top: 20px;               /* Espaço acima do resultado */
+    color: #111;                    /* Cor escura para destaque */
+    font-size: 1.1rem;              /* Tamanho da fonte */
+    font-weight: bold;             /* Texto em negrito */
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;        /* Fundo preto */
+    color: #fff;                   /* Texto branco */
+    text-align: center;            /* Centraliza o texto */
+    padding: 15px;                 /* Espaço interno */
+    font-size: 0.9rem;             /* Tamanho do texto um pouco menor */
+    border-top: 3px solid #ffcc00; /* Linha amarela no topo do rodapé */
+    position: relative;            /* Permite posicionamentos específicos se necessário */
+}
+
